@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -37,7 +37,7 @@ module.exports = {
       template: './public/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.css',
+      filename: './src/App.css',
     }),
     new CleanWebpackPlugin(),
   ],

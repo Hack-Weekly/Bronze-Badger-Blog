@@ -1,7 +1,9 @@
 const morgan = require('morgan');
 
 morgan.token('body', (req, res) =>
-  req.body && !req.originalUrl.includes('/api/users')
+  req.body &&
+  !req.originalUrl.includes('/api/users') &&
+  !req.originalUrl.includes('/api/login')
     ? JSON.stringify(req.body)
     : ''
 );

@@ -1,6 +1,7 @@
 const express = require('express');
 const { morgan, unknownEndpoint } = require('./utils/middleware');
 const userRouter = require('./controllers/users');
+const loginRouter = require('./controllers/login');
 
 const app = express();
 app.use(express.json());
@@ -11,6 +12,7 @@ app.use(
 );
 
 app.use('/api/users', userRouter);
+app.use('/api/login', loginRouter);
 
 app.use(unknownEndpoint);
 // TODO: add error handler and routers

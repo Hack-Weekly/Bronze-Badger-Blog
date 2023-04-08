@@ -25,18 +25,18 @@ input {
 
 
 /* Landing Page */
-.landingPage-dic{
+.landingPage-div{
+  background-image: linear-gradient(to right, rgb(115, 0, 255), rgb(103, 31, 171), rgb(91, 79, 103));
+}
+
+#landing-h1{
+
+}
+
+#landing-h3{
+
+}
+
+#landing-btn{
   
-}
-
-.landing-h1{
-
-}
-
-.landing-h3{
-
-}
-
-.landing-btn{
-
 }

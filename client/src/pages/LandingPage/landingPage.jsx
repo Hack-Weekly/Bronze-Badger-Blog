@@ -1,4 +1,4 @@
-import LP from "../../components/LandingPage/Landingpage";
+import LP from "../../components/LandingPage/LandingHome";
 
 const Landing = () => {
     return(

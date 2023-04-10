@@ -1,11 +1,10 @@
 import LP from "../../components/LandingPage/LandingHome";
 
-const Landing = () => {
+const LandingPage = () => {
     return(
         <div>
-            {LP}
+            <LP/>
         </div>
-    )
-}
-
-export default Landing;
+    );
+};
+export default LandingPage;

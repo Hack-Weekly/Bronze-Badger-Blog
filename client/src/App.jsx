@@ -10,15 +10,21 @@ import { Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
     <div className="container">
+       
+
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/posts/:id' element={<Posts />} />    
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/register' element={<Register />} />
         <Route exact path='/search' element={<SearchBar />} />
+   
       </Routes>
+
+     
     </div>
-  );
-};
+
+  )
+  };
 
 export default App;

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import EyeOpen from '../../../assets/images/eye.svg'
+import EyeClosed from '../../../assets/images/eye-slash.svg'
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -25,30 +27,38 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={handleLogin}>
-      <h2>Login</h2>
-      <label>
-        Email:
+    <form
+      className="login-form"
+      onSubmit={handleLogin}>
         <input
+          id="login-email"
+          className="form-field"
           type="email"
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-      </label>
-      <label>
-        Password:
         <div>
+        <span className="input-container">
           <input
+            id="login-password"
+            className="form-field"
             type={showPassword ? 'text' : 'password'}
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="button" onClick={() => setShowPassword(!showPassword)}>
-            {showPassword ? 'Hide' : 'Show'}
-          </button>
+          <img
+            src={showPassword ? EyeClosed : EyeOpen}
+            alt={showPassword ? "Hide password" : "Show password"} 
+            onClick={() => setShowPassword(!showPassword)}
+          />
+        </span>
         </div>
-      </label>
-      <button type="submit">Login</button>
+      <button
+        type="submit"
+        className="form-field"
+        >Login</button>
     </form>
   );
 };

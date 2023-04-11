@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./loginStyles.css"
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -23,12 +24,13 @@ const Login = () => {
       // login error (needs implementation)
     }
   };
-  const loginStyle = {color: "#7fc980", display: "flex", position: 'absolute',
-                      top: "20%", right: "30%"}
+
   return (
-    <form onSubmit={handleLogin} style={loginStyle}>
-      <h2>Login</h2>
-      <label>
+    <form onSubmit={handleLogin} className='loginStyle'>
+      
+      <h2>Login:</h2>
+
+      <label id='loginEmailStyle'>
         Email:
         <input
           type="email"
@@ -36,7 +38,8 @@ const Login = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
       </label>
-      <label>
+
+      <label id='passwordStyle'>
         Password:
         <div>
           <input
@@ -49,7 +52,9 @@ const Login = () => {
           </button>
         </div>
       </label>
+
       <button type="submit">Login</button>
+
     </form>
   );
 };

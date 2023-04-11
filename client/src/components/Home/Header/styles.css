@@ -1,1 +1,19 @@
-
+/* Header */
+.home-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.home-header-h2{
+    color: #ff9999;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+.home-header-h1{
+    color: #ff9999;
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    top: 1%;
+}

@@ -1,6 +1,7 @@
 /* Landing Page */
 .landingPage-div{
     background-image: linear-gradient(to right, rgb(115, 0, 255), rgb(103, 31, 171), rgb(91, 79, 103));
+    width: 100%;
   }
   
   #landing-h1{

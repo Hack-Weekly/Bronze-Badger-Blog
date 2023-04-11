@@ -23,9 +23,10 @@ const Login = () => {
       // login error (needs implementation)
     }
   };
-
+  const loginStyle = {color: "#7fc980", display: "flex", position: 'absolute',
+                      top: "20%", right: "30%"}
   return (
-    <form onSubmit={handleLogin}>
+    <form onSubmit={handleLogin} style={loginStyle}>
       <h2>Login</h2>
       <label>
         Email:

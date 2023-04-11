@@ -1,22 +1,22 @@
 .loginStyle{
-color: "#7fc980"; 
-display: flex; 
-position: 'absolute';    
-top: 20%; 
-right: 30%; 
-border: "solid";
-height: 20%;
+    display: flex; 
+    position: 'absolute';    
+    top: 20%; 
+    right: 30%; 
+    border: "solid";
+    height: 20%;
+    color: "#7fc980"; 
 }
 
-#loginEmailStyle{
-position: "relative";
-top: 70px;
-right: 7.5%;
+.loginEmailStyle{
+    top: 70px;
+    right: 7.5%;
+    position: "relative";
 }
 
 
-#passwordStyle{
-position: "relative";
-top: 120px;
-right: 40%;
+.passwordStyle{
+    top: 120px;
+    right: 40%;
+    position: "relative";
 }

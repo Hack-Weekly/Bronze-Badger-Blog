@@ -30,7 +30,7 @@ const Login = () => {
       
       <h2>Login:</h2>
 
-      <label id='loginEmailStyle'>
+      <label className='loginEmailStyle'>
         Email:
         <input
           type="email"
@@ -39,7 +39,7 @@ const Login = () => {
         />
       </label>
 
-      <label id='passwordStyle'>
+      <label className='passwordStyle'>
         Password:
         <div>
           <input
